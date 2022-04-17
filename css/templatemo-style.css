@@ -74,7 +74,11 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  /* background-image: url('../img/logo.jpg'); */
+  background-image: url("../img/mini-profile-bg-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .tm-brand-container-outer {
@@ -105,6 +109,11 @@ a:hover {
 
 #tmContact {
   min-height: 1197px;
+  background-image: url("../img/mini-profile-bg-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .tm-welcome-container {
@@ -137,6 +146,17 @@ a:hover {
   background-color: #986665;
   padding: 80px 43px 70px;
   height: 100%;
+  background-image: url(../img/logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media (min-width: 750px) {
+  .tm-welcome-right {
+    padding: 300px;
+  }
 }
 
 .tm-welcome-icon {
@@ -187,11 +207,11 @@ a:hover {
 }
 
 .tm-text-blue {
-  color: #98665;
+  color: #c98665;
 }
 
 .tm-text-dark-gray {
-  color: #98665;
+  color: #c98665;
 }
 
 .tm-title-small {
@@ -343,9 +363,3 @@ p {
   }
 }
 
-.tm-welcome-right{
-  background-image: url('../img/logo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
