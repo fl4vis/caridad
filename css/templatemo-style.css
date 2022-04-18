@@ -82,16 +82,20 @@ a:hover {
 }
 
 .tm-brand-container-outer {
-  margin-top: -200px;
+  margin-top: 500px;
+  margin-left: 5%;
+  width: 50%;
+  display: block;
 }
 
 .tm-brand-container-inner {
-  max-width: 580px;
-  width: 100%;
+  /* max-width: 580px; */
+  display: block;
+  /* width: 25%; */
 }
 
 .tm-brand-container {
-  padding: 75px 110px;
+  padding: 25px 110px;
 }
 
 .tm-brand-name {
@@ -103,7 +107,7 @@ a:hover {
 }
 
 .parallax-window {
-  min-height: 1100px;
+  min-height: 60em;
   background: transparent;
 }
 
@@ -116,29 +120,39 @@ a:hover {
   background-attachment: fixed;
 }
 
+/* New css */
+
 .tm-welcome-container {
-  min-height: 400px;
+  min-height: 500px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+@media (max-width: 765px) {
+ .tm-welcome-container {
+  top: 40%;
+ } 
+
+ .tm-brand-container-outer {
+  margin-top: 5em;
+}
+
+.parallax-window {
+  min-height: 90em;
+  background: transparent;
+}
+}
+
 
 .tm-welcome-title {
   margin-bottom: 40px;
-}
-
-.tm-welcome-left {
-  padding-right: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.tm-welcome-left-col {
-  display: flex;
-  align-items: center;
+  font-weight: 600;
+  font-stretch: expanded;
 }
 
 .tm-welcome-right {
@@ -150,20 +164,26 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+} 
+
+
+.left {
+  padding: 1em;
+  padding-left: 4em;
+  background-color:rgba(85, 4, 74, 0.603);
+  color: white;
+  /* font-weight: 300; */
+}
+
+.right img {
+  height: auto;
+  margin: 1em;
+
+  width: 100%;
+  max-width: 450px;
 }
 
 
-@media (min-width: 750px) {
-  .tm-welcome-right {
-    padding: 300px;
-  }
-}
-
-.tm-welcome-icon {
-  margin-bottom: 50px;
-  display: block;
-  text-align: center;
-}
 
 /*
   Portfolio section
